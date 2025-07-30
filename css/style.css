@@ -68,7 +68,7 @@ h1, h2 {
 
 /* Masthead */
 .masthead {
-  background: url('img1.jpg') no-repeat center/cover;
+  background: url('../img/img1.jpg') no-repeat center/cover;
   color: white;
   text-align: center;
   padding: 4rem 1rem;

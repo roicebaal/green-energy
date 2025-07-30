@@ -1,9 +1,9 @@
 // Preload Images
 function preloader() {
   const imagesList = [
-    "Community Wind Projects.jpg",
-    "Energy Efficient Appliances.jpg",
-    "Solar Panel Subsidies.jpg"
+    "img/solarpanelsubsidies.jpg",
+    "img/communitywindprojects.jpg",
+    "img/energyefficientappliances.jpg"
   ];
   const images = [];
   for (let i = 0; i < imagesList.length; i++) {
@@ -19,19 +19,19 @@ const resources = {
   solar: {
     headingContent: "Solar Panel Subsidies",
     bodyText: "Governments can provide subsidies to make solar panels affordable for average-income households.",
-    imgUrl: "Solar Panel Subsidies.jpg",
+    imgUrl: "img/solarpanelsubsidies.jpg",
     imgAlt: "Solar Panels"
   },
   wind: {
     headingContent: "Community Wind Projects",
     bodyText: "Local wind projects can generate shared energy at reduced costs for communities.",
-    imgUrl: "Community Wind Projects.jpg",
+    imgUrl: "img/communitywindprojects.jpg",
     imgAlt: "Wind Turbines"
   },
   efficient: {
     headingContent: "Energy Efficient Appliances",
     bodyText: "Switching to efficient appliances reduces energy bills and lowers consumption.",
-    imgUrl: "Energy Efficient Appliances.jpg",
+    imgUrl: "img/energyefficientappliances.jpg",
     imgAlt: "Efficient Appliances"
   }
 };
@@ -63,7 +63,7 @@ function updateContent(resource) {
 
 buttons.forEach(button => button.addEventListener("click", handleSelection));
 
-// ✅ Hamburger Menu Toggle
+// Hamburger Menu Toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
