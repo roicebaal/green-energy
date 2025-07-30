@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+/* Color Scheme:
+Primary: #2E8B57 (green)
+Secondary: #F4F4F4 (light gray)
+Dark Text: #222222
+Accent: #FFD700 (yellow)
+*/
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  background: #F4F4F4;
+  color: #222;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background: #2E8B57;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Masthead */
+.masthead {
+  background: url('../img/img1.jpg') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.masthead h1 {
+  font-size: 2rem;
+}
+
+.masthead p {
+  font-size: 1rem;
+}
+
+/* Main Content */
+.main-content {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.buttons {
+  margin-bottom: 1rem;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#active-button {
+  background: #2E8B57;
+  color: white;
+}
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Footer */
+footer {
+  background: #2E8B57;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FFD700;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  /* Navbar for Mobile */
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background: #2E8B57;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  /* Masthead Scaling */
+  .masthead h1 {
+    font-size: 1.6rem;
+  }
+
+  .masthead p {
+    font-size: 0.9rem;
+  }
+
+  /* Buttons Stacking */
+  .buttons button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
