@@ -1,9 +1,9 @@
 // Preload Images
 function preloader() {
   const imagesList = [
-    "img/Community Wind Projects.jpg",
-    "img/Energy Efficient Appliances.jpg",
-    "img/Solar Panel Subsidies.jpg"
+    "Community Wind Projects.jpg",
+    "Energy Efficient Appliances.jpg",
+    "Solar Panel Subsidies.jpg"
   ];
   const images = [];
   for (let i = 0; i < imagesList.length; i++) {
@@ -19,19 +19,19 @@ const resources = {
   solar: {
     headingContent: "Solar Panel Subsidies",
     bodyText: "Governments can provide subsidies to make solar panels affordable for average-income households.",
-    imgUrl: "img/Solar Panel Subsidies.jpg",
+    imgUrl: "Solar Panel Subsidies.jpg",
     imgAlt: "Solar Panels"
   },
   wind: {
     headingContent: "Community Wind Projects",
     bodyText: "Local wind projects can generate shared energy at reduced costs for communities.",
-    imgUrl: "img/Community Wind Projects.jpg",
+    imgUrl: "Community Wind Projects.jpg",
     imgAlt: "Wind Turbines"
   },
   efficient: {
     headingContent: "Energy Efficient Appliances",
     bodyText: "Switching to efficient appliances reduces energy bills and lowers consumption.",
-    imgUrl: "img/Energy Efficient Appliances.jpg",
+    imgUrl: "Energy Efficient Appliances.jpg",
     imgAlt: "Efficient Appliances"
   }
 };
